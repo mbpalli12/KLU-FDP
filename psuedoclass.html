@@ -1,0 +1,89 @@
+<html>
+<head> <title> Psuedo Classes</title>
+<style>
+input[type="number"]:out-of-range
+{
+ border: 2px solid red;
+}
+input[type="number"]:in-range
+{
+ border: 2px solid green ;
+}
+input[type="email"]:invalid
+{
+ border: 2px solid red ;
+}
+input[type="email"]::placeholder
+{
+ color:blue;
+}
+
+p::first-letter
+{
+    font-size: 20px;
+    color:red;
+}
+p::before
+{
+    content: "KLU ";
+}
+p::after
+{
+    content: "END ";
+}
+p::selection
+{
+    background-color: grey;
+    color:white;
+}
+li{
+    color:red;
+}
+.cl
+{
+    list-style-type: none;
+}
+.cl li::before
+{
+   content: "\2713"; 
+   color:red;
+   margin-right: 1px;
+}
+
+
+</style>
+</head>
+<body>
+<input type="number" placeholder="enter age " min=0 max=18  style="width: 500px">
+<br><br>
+<input type="email" placeholder="enter email address ">
+<br><br>
+<p>
+    The economy of India is a developing mixed economy with a 
+    notable public sector in strategic sectors.
+    It is the world's fifth-largest economy by nominal GDP 
+    and the third-largest by purchasing power parity (PPP); 
+    on a per capita income basis, India ranked 136th by GDP 
+    (nominal) and 125th by GDP (PPP).[59] From independence 
+    in 1947 until 1991, successive governments 
+    followed the Soviet model and promoted protectionist 
+    economic policies, with extensive Sovietization, 
+    state intervention, demand-side economics, natural resources, 
+</p>
+<br><br>
+<ul>
+    <li>KLU</li>
+    <li>ExcelR</li>
+    <li>FSD</li>
+    <li>Devops</li>
+    <li>CI/CD pipeLine</li>
+</ul>
+<ul class ="cl">
+    <li>KLU</li>
+    <li>ExcelR</li>
+    <li>FSD</li>
+    <li>Devops</li>
+    <li>CI/CD pipeLine</li>
+</ul>
+</body>
+</html>
